@@ -1,19 +1,21 @@
-// criando funcoes
-
-// funcao sem retorno
-function greet(name = 'Mergulhador'){
-    console.log('Boa Madrugada, ' + name)
+// condicionais
+var me = {
+    name: 'Joana',
+    age: 18
 }
 
-greet('Jose')
-greet()
-
-
-// funcao com retorno
-function greetComRetorno(name = 'Mergulhador'){
-    return 'Boa Madrugada, ' + name
+// funcao 
+function checkAge(person){
+    console.log('A idade da pessoa eh: ' + person.age)
+    
+    // Operadores:
+    // == valida o conteudo da variavel, se eh igual
+    // === valida se o tipo e o valor esta igual (String == Number)
+    if(person.age > 17){
+        console.log('A pessoa eh maior de idade')
+    }else{
+        console.log('MENOR')
+    }
 }
 
-console.log(greetComRetorno('Daniel'))
-
-
+checkAge(me)
