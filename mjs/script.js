@@ -1,21 +1,27 @@
-// condicionais
-var me = {
-    name: 'Joana',
-    age: 18
+
+//Nessa aula vamos aprender sobre funcoes PURAS e IMPURAS.IMPURAS
+//PURAS = sao funcoes que nao alteram o objeto original
+//IMPURAS = sao funcoes que alteram o objeto original (Gera Efeito Colateral)
+
+var person = {
+    name: 'Lucas',
+    age: 14
 }
 
-// funcao 
-function checkAge(person){
-    console.log('A idade da pessoa eh: ' + person.age)
-    
-    // Operadores:
-    // == valida o conteudo da variavel, se eh igual
-    // === valida se o tipo e o valor esta igual (String == Number)
-    if(person.age > 17){
-        console.log('A pessoa eh maior de idade')
-    }else{
-        console.log('MENOR')
-    }
+function getRemainingYearstoMajorty (person){
+    return 18 - person.age
 }
 
-checkAge(me)
+function increasePersonAge (person){
+    person.age = person.age + getRemainingYearstoMajorty(person)
+}
+
+console.log(person.age)
+
+var remainingYears = getRemainingYearstoMajorty(person)
+
+console.log(remainingYears)
+
+increasePersonAge(person)
+
+console.log(getRemainingYearstoMajorty(person))
