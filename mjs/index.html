@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hhh
+    <script>
+
+        const name = 'Julio';
+        const age = 32;
+
+        const sentence =  'Olá, meu nome eh: ' + name + ' e eu tenho ' + age + ' anos.';
+        const sentence2 = `Olá, meu nome eh: ${name} e eu tenho ${age} anos.`;
+
+        console.log(sentence);
+        console.log(sentence2);
+
+        // Tem tambem a questao da quebra de linha.
+        // Usando o '' ou "" ele nao respeita as quebras e tem que escapar cada nova linha com \
+        // Usando o `` ele mantem toda as identacao que existe no codigo.
+        
+        // EX: 
+
+       
+
+        const html = `
+        <ul>
+            <li>
+                ${name}
+            </li>
+            <li>
+                ${age}
+            </li>
+        </ul>
+        `
+        console.log(html)
+
+        const html2 = "\
+        <ul>\
+            <li>\
+                ${name}\
+            </li>\
+            <li>\
+                ${age}\
+            </li>\
+        </ul>\
+        "
+        console.log(html2)
+
+    </script>
+</body>
+</html>
