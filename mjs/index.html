@@ -7,50 +7,11 @@
     <title>Document</title>
 </head>
 <body>
-    hhh
     <script>
-
-        const name = 'Julio';
-        const age = 32;
-
-        const sentence =  'Olá, meu nome eh: ' + name + ' e eu tenho ' + age + ' anos.';
-        const sentence2 = `Olá, meu nome eh: ${name} e eu tenho ${age} anos.`;
-
-        console.log(sentence);
-        console.log(sentence2);
-
-        // Tem tambem a questao da quebra de linha.
-        // Usando o '' ou "" ele nao respeita as quebras e tem que escapar cada nova linha com \
-        // Usando o `` ele mantem toda as identacao que existe no codigo.
-        
-        // EX: 
-
+        setTimeout(() => {
+console.log('Executou')
+        }, 5000);
        
-
-        const html = `
-        <ul>
-            <li>
-                ${name}
-            </li>
-            <li>
-                ${age}
-            </li>
-        </ul>
-        `
-        console.log(html)
-
-        const html2 = "\
-        <ul>\
-            <li>\
-                ${name}\
-            </li>\
-            <li>\
-                ${age}\
-            </li>\
-        </ul>\
-        "
-        console.log(html2)
-
     </script>
 </body>
 </html>
